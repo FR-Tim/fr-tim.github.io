@@ -6,221 +6,112 @@
     <title>timproject0</title>   
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/x-icon" href="T.png">
+    <script src="main.js"></script>
 
 
   </head>
   <body>
-    
+    <nav>
+      <div class="logo">TimProject0</div>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tools">Outils</a></li>
+        <li><a href="#contact">A Propos</a></li>
+        <li><a href="signup.html">S'inscrire</a></li>
+        <li><a href="https://github.com/FR-Tim">Github</a></li> 
+      </ul>
+    </nav>
 
     <main>
       <!-- Hero Section -->
       <section class="hero" id="home">
-        <h1>Timothé Cormier</h1>
-        <p>Ci-dessous un bouton pour ma vrai page</p>
+        <h1>Pentester</h1>
+        <p class="subtitle">[ Sécurité • Hacking • Bug Bounty ]</p>
+        <p>Maîtrisez l'art de la cybersécurité offensive et protégez les systèmes les plus robustes</p>
         <div>
-          <button class="btn" onclick="window.location.href='https://timproject0.neocities.org'">
-  Ma vraie page !
-</button>
-
- 
-     
+          <button onclick="window.open('signup.html', '_blank')" class="btn">Commencer</button>
+          <button class="btn btn-secondary">En Savoir Plus</button>
         </div>
       </section>
+
+      <!-- Services Section -->
+      <section class="section" id="services">
+        <h2>>>> EN QUOI CE METIER CONSISTE <<<</h2>
+        <div class="cards-container">
+          <div class="card scroll-animate">
+            <h3>Reconnaissance</h3>
+            <p>Apprenez les techniques avancées de reconnaissance et de footprinting pour identifier les cibles potentielles.</p>
+          </div>
+          <div class="card scroll-animate">
+            <h3>Exploitation</h3>
+            <p>Maîtrisez les méthodes d'exploitation des vulnérabilités et les techniques de compromission des systèmes.</p>
+          </div>
+          <div class="card scroll-animate">
+            <h3>Réseaux</h3>
+            <p>Explorez les attaques réseau, le spoofing, et les techniques avancées de sécurité réseau.</p>
+          </div>
+          <div class="card scroll-animate">
+            <h3>Web Security</h3>
+            <p>Découvrez les vulnérabilités web, les injections SQL, XSS et les méthodes de sécurisation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools Section -->
+      <section class="section" id="tools">
+        <h2>>>> OUTILS ESSENTIELS <<<</h2>
+        <div class="cards-container">
+          <div class="card scroll-animate">
+            <h3>Metasploit Framework</h3>
+            <p>L'outil d'exploitation le plus puissant pour les tests de pénétration professionnels.</p>
+          </div>
+          <div class="card scroll-animate">
+            <h3>Burp Suite</h3>
+            <p>La plateforme complète pour les tests de sécurité des applications web.</p>
+          </div>
+          <div class="card scroll-animate">
+            <h3>Kali Linux</h3>
+            <p>Le système d'exploitation préféré des pentesters avec 600+ outils préconfigurés.</p>
+          </div>
+          <div class="card scroll-animate">
+            <h3>Wireshark</h3>
+            <p>L'analyseur de protocoles réseau pour capturer et inspecter le trafic.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <h2>>>> A PROPOS DE MOI <<<</h2>
+
+  <div class="cards-container">
+    <div class="card scroll-animate">
+      <p>
+        <p>const AboutMe = {</p>
+        <p>username: "FR-Tim",</p>
+        <p>name: "Timothé",</p>
+        <p>occupation: "Developer in Training",</p>
+        <p>hobbies: ["Electronic", "Tech", "Coding", "Cybersecurity"],</p>
+        <p>stack: ["HTML", "CSS", "Python"], };</p>        
+      </p>
+    </div>
+
+    <div class="card scroll-animate">
+
+<p>const AboutMyProject = {</p>  
+  <p>project_1: "Game Microsoft-Makecode",</p>  
+  <p>project_2: "meal-planner",</p>  
+  <p>project_3: "mevn-todolist",</p>  
+  <p>project_4: "website_timproject0", };</p>  
+  
+</div>
+  </div>
+</section>
+    </main>
+
     <footer>
       <p>&copy; 2026 timproject0. Tous droits réservés. </p>
     </footer>    
   </body>
-  <style>* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: linear-gradient(135deg, #0a0e27 0%, #16213e 100%);
-  color: #00ff88;
-  font-family: 'Courier New', monospace;
-  overflow-x: hidden;
-}
-
-/* Navigation */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(10, 14, 39, 0.95);
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  border-bottom: 2px solid #00ff88;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
-}
-
-nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-  animation: glow 2s ease-in-out infinite;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-nav a {
-  color: #00ff88;
-  text-decoration: none;
-  padding: 8px 16px;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #fff;
-  border: 1px solid #00ff88;
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
-}
-
-/* Animations */
-@keyframes glow {
-  0%, 100% { text-shadow: 0 0 10px #00ff88; }
-  50% { text-shadow: 0 0 25px #00ff88; }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Main */
-main {
-  margin-top: 70px;
-}
-
-/* Hero */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 25px;
-  padding: 40px 20px;
-}
-
-.hero h1 {
-  font-size: 56px;
-  text-shadow: 0 0 20px #00ff88;
-}
-
-.subtitle {
-  font-size: 24px;
-  color: #00ccff;
-}
-
-.hero p {
-  max-width: 600px;
-  color: #b0b0b0;
-}
-
-/* Buttons */
-.btn1 {
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #00ff88, #00ccff);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn {
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #00ff88, #00ccff);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #00ff88;
-  border: 2px solid #00ff88;
-}
-
-/* Sections */
-.section {
-  min-height: 100vh;
-  padding: 100px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section h2 {
-  font-size: 42px;
-  margin-bottom: 50px;
-  text-shadow: 0 0 15px #00ff88;
-}
-
-/* Cards layout */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
-  gap: 30px;
-  width: 100%;
-  max-width: 1000px;
-}
-
-@media (max-width: 800px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-.card {
-  background: rgba(0, 255, 136, 0.05);
-  border: 2px solid #00ff88;
-  padding: 30px;
-  border-radius: 8px;
-  transition: 0.3s;
-  animation: fadeIn 1s forwards;
-}
-
-.card:hover {
-  background: rgba(0, 255, 136, 0.15);
-  transform: translateY(-10px);
-  box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
-}
-
-.card h3 {
-  color: #00ccff;
-  margin-bottom: 15px;
-}
-
-.card p {
-  color: #b0b0b0;
-  line-height: 1.6;
-}
-
-/* Footer */
-footer {
-  background: rgba(10, 14, 39, 0.95);
-  border-top: 2px solid #00ff88;
-  padding: 40px;
-  text-align: center;
-  color: #b0b0b0;
-}
-</style>
 </html>
-
